@@ -53,12 +53,12 @@ HTTPPROXY_ENABLED = True
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#     'test_proxy.middlewares.TestProxyDownloaderMiddleware': 543,
-#     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': None,
-#     'test_proxy.middlewares.ProxyMiddleWare': 100,
-#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-# }
+DOWNLOADER_MIDDLEWARES = {
+    'test_proxy.middlewares.TestProxyDownloaderMiddleware': 543,
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': None,
+    'test_proxy.middlewares.ProxyMiddleWare': 100,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+}
 # RETRY_TIMES = 100
 
 # Enable or disable extensions
